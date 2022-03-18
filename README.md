@@ -1,1 +1,1 @@
-# Prvý dynamick spevník Slovensk
+# Prvý dynamický spevník Slovenských piesní

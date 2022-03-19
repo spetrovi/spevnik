@@ -1,0 +1,17 @@
+\begin{lilypond}
+\header {
+	title = "{{song.metadata.nazov}}" 
+ 	composer = "{{song.metadata.interpret}}"
+ 	piece = "{{song.metadata.forma}}"
+}
+
+{% if song.melodia is defined %}
+\relative {
+{{ song.melodia }}
+{% endif %}
+
+
+\markup { 
+{{ slohy }}
+}
+\end{lilypond}

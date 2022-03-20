@@ -1,0 +1,269 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2022.3.18)  20 MAR 2022 22:28
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**spevnik.tex
+(./spevnik.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-04-06>
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count176
+\Gm@cntv=\count177
+\c@Gm@tempcnt=\count178
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count179
+\l__pdf_internal_box=\box45
+)
+No file spevnik.aux.
+\openout1 = `spevnik.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=591.5302pt
+* \oddsidemargin=-0.56833pt
+* \evensidemargin=35.28255pt
+* \topmargin=-0.93083pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=115.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count180
+\scratchdimen=\dimen143
+\scratchbox=\box46
+\nofMPsegments=\count181
+\nofMParguments=\count182
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count183
+\MPscratchDim=\dimen144
+\MPnumerator=\count184
+\makeMPintoPDFobject=\count185
+\everyMPtoPDFconversion=\toks18
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 6.
+
+
+LaTeX Warning: No \author given.
+
+[1
+
+
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [2]
+(./61/lily-3c3b53ae-systems.tex
+<./61/lily-3c3b53ae-1.pdf, id=12, 548.0475pt x 31.11626pt>
+File: ./61/lily-3c3b53ae-1.pdf Graphic file (type pdf)
+<use ./61/lily-3c3b53ae-1.pdf>
+Package pdftex.def Info: ./61/lily-3c3b53ae-1.pdf  used on input line 1.
+(pdftex.def)             Requested size: 548.04616pt x 31.11617pt.
+<./61/lily-3c3b53ae-2.pdf, id=13, 292.09125pt x 149.55875pt>
+File: ./61/lily-3c3b53ae-2.pdf Graphic file (type pdf)
+<use ./61/lily-3c3b53ae-2.pdf>
+Package pdftex.def Info: ./61/lily-3c3b53ae-2.pdf  used on input line 7.
+(pdftex.def)             Requested size: 292.09052pt x 149.55838pt.
+) (./9d/lily-24819cf1-systems.tex
+<./9d/lily-24819cf1-1.pdf, id=14, 548.0475pt x 31.11626pt>
+File: ./9d/lily-24819cf1-1.pdf Graphic file (type pdf)
+<use ./9d/lily-24819cf1-1.pdf>
+Package pdftex.def Info: ./9d/lily-24819cf1-1.pdf  used on input line 1.
+(pdftex.def)             Requested size: 548.04616pt x 31.11617pt.
+<./9d/lily-24819cf1-2.pdf, id=15, 173.64874pt x 116.435pt>
+File: ./9d/lily-24819cf1-2.pdf Graphic file (type pdf)
+<use ./9d/lily-24819cf1-2.pdf>
+Package pdftex.def Info: ./9d/lily-24819cf1-2.pdf  used on input line 7.
+(pdftex.def)             Requested size: 173.64832pt x 116.43471pt.
+)
+(./62/lily-acc34dcb-systems.tex
+<./62/lily-acc34dcb-1.pdf, id=16, 548.0475pt x 35.13126pt>
+File: ./62/lily-acc34dcb-1.pdf Graphic file (type pdf)
+<use ./62/lily-acc34dcb-1.pdf>
+Package pdftex.def Info: ./62/lily-acc34dcb-1.pdf  used on input line 1.
+(pdftex.def)             Requested size: 548.04616pt x 35.13115pt.
+<./62/lily-acc34dcb-2.pdf, id=17, 344.28625pt x 151.56625pt>
+File: ./62/lily-acc34dcb-2.pdf Graphic file (type pdf)
+<use ./62/lily-acc34dcb-2.pdf>
+Package pdftex.def Info: ./62/lily-acc34dcb-2.pdf  used on input line 7.
+(pdftex.def)             Requested size: 344.2854pt x 151.56587pt.
+) (./46/lily-fc7a5563-systems.tex
+<./46/lily-fc7a5563-1.pdf, id=18, 548.0475pt x 31.11626pt>
+File: ./46/lily-fc7a5563-1.pdf Graphic file (type pdf)
+<use ./46/lily-fc7a5563-1.pdf>
+Package pdftex.def Info: ./46/lily-fc7a5563-1.pdf  used on input line 1.
+(pdftex.def)             Requested size: 548.04616pt x 31.11617pt.
+<./46/lily-fc7a5563-2.pdf, id=19, 201.75375pt x 116.435pt>
+File: ./46/lily-fc7a5563-2.pdf Graphic file (type pdf)
+<use ./46/lily-fc7a5563-2.pdf>
+Package pdftex.def Info: ./46/lily-fc7a5563-2.pdf  used on input line 7.
+(pdftex.def)             Requested size: 201.75325pt x 116.43471pt.
+)
+(./3b/lily-a6ce30eb-systems.tex
+<./3b/lily-a6ce30eb-1.pdf, id=20, 548.0475pt x 31.11626pt>
+File: ./3b/lily-a6ce30eb-1.pdf Graphic file (type pdf)
+<use ./3b/lily-a6ce30eb-1.pdf>
+Package pdftex.def Info: ./3b/lily-a6ce30eb-1.pdf  used on input line 1.
+(pdftex.def)             Requested size: 548.04616pt x 31.11617pt.
+<./3b/lily-a6ce30eb-2.pdf, id=21, 176.66pt x 119.44624pt>
+File: ./3b/lily-a6ce30eb-2.pdf Graphic file (type pdf)
+<use ./3b/lily-a6ce30eb-2.pdf>
+Package pdftex.def Info: ./3b/lily-a6ce30eb-2.pdf  used on input line 7.
+(pdftex.def)             Requested size: 176.65956pt x 119.44594pt.
+)
+Overfull \hbox (129.79248pt too wide) in paragraph at lines 13--81
+ [] 
+ []
+
+
+Overfull \hbox (129.79248pt too wide) in paragraph at lines 13--81
+ [] 
+ []
+
+
+Overfull \hbox (129.79248pt too wide) in paragraph at lines 13--81
+ [] 
+ []
+
+
+Overfull \hbox (129.79248pt too wide) in paragraph at lines 13--81
+ [] 
+ []
+
+
+Overfull \hbox (129.79248pt too wide) in paragraph at lines 13--81
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3
+
+ <./61/lily-3c3b53ae-1.pdf> <./61/lily-3c3b53ae-2.pdf> <./9d/lily-24819cf1-1.pd
+f> <./9d/lily-24819cf1-2.pdf> <./62/lily-acc34dcb-1.pdf>] [4 <./62/lily-acc34dc
+b-2.pdf> <./46/lily-fc7a5563-1.pdf> <./46/lily-fc7a5563-2.pdf> <./3b/lily-a6ce3
+0eb-1.pdf> <./3b/lily-a6ce30eb-2.pdf>] (./spevnik.aux) ) 
+Here is how much of TeX's memory you used:
+ 1726 strings out of 480616
+ 26088 string characters out of 5906382
+ 264940 words of memory out of 5000000
+ 17618 multiletter control sequences out of 15000+600000
+ 536937 words of font info for 39 fonts, out of 8000000 for 9000
+ 1137 hyphenation exceptions out of 8191
+ 30i,6n,25p,188b,192s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr17.pfb>
+Output written on spevnik.pdf (4 pages, 325870 bytes).
+PDF statistics:
+ 135 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+

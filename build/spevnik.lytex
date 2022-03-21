@@ -59,33 +59,6 @@
 \end{lilypond}
 \begin{lilypond}
 \header {
-	title = "Ach Ivka, Ivka" 
- 	composer = "FS Selčan"
- 	piece = "Valčík"
-}
-
-
-
-
-\markup { 
-\column { 
-\line { \bold "1." 
-\column { 
-"Ach Ivka, Ivka, moja frajérka,"
-"prečo ta za mňa nescú dať."
-"Či peknejšého, šikovnejšého"
-"tvoja mamka scú zádavať."
-"/: Šikovnejšého nenájdú,"
-"ani ket celý svet obejdú."
-"Ach Ivka, Ivka, moja frajérka,"
-"prečo ta za mňa nescú dať. :/"
-} 
-}
-}
-}
-\end{lilypond}
-\begin{lilypond}
-\header {
 	title = "Čo sa stalo stať sa nemalo" 
  	composer = "FS Selčan"
  	piece = "Polka"
@@ -203,6 +176,163 @@
 "voják si pýta od nej večeru."
 "Húska pečená, holka svlečená,"
 "to je vojácka dobrá večera."
+} 
+}
+}
+}
+\end{lilypond}
+\begin{lilypond}
+\header {
+	title = "Ach Ivka, Ivka" 
+ 	composer = "FS Selčan"
+ 	piece = "Valčík"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"Ach Ivka, Ivka, moja frajérka,"
+"prečo ta za mňa nescú dať."
+"Či peknejšého, šikovnejšého"
+"tvoja mamka chcú zaťa mať."
+"/: Šikovnejšého nenájdú,"
+"ani ket celý svet obejdú."
+"Ach Ivka, Ivka, moja frajérka,"
+"prečo ta za mňa nescú dať. :/"
+} 
+}
+}
+}
+\end{lilypond}
+
+\chapter*{Podkarpatská Rus}
+\section*{Pudpleša}
+\begin{lilypond}
+\header {
+	title = "Nebudu tu pidu dalej" 
+ 	composer = "Železiar"
+ 	piece = "Nezistené"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"Nebudu tu pidu dalej,"
+"kačmarečko vznka nalej."
+"/:Nalej, nalej do pohara"
+"kačmarečko maľovana.:/"
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"Dobri tomu synačkovi"
+"što sja ženyt pri vicovi,"
+"/:pri vicovi pri materi,"
+"sja mu serce rozveselyť.:/"
+} 
+}
+}
+}
+\end{lilypond}
+\begin{lilypond}
+\header {
+	title = "Horila Sosna" 
+ 	composer = "Železiar"
+ 	piece = "Valčík"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"/:Horila sosna, palala,:/"
+"/:pid ňou ďivčina stojala.:/"
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"/:Pid ňou ďivčina stojala,:/"
+"/:rusjavu kosu česala.:/"
+} 
+}
+}
+
+ 
+\hspace #0.1 % adds horizontal spacing between columns; 
+% if they are still too close, add more " " pairs 
+% until the result looks good 
+\column { 
+\line { \bold "3." 
+\column { 
+"/:Oj, kosy, kosy vy moji,:/"
+"/:dovho služyly vy meňi. :/"
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "4." 
+\column { 
+"/::Biľše služyť nebudete,:/"
+"/:pid bilyj šlajer pidete.:/"
+} 
+}
+} 
+}
+\end{lilypond}
+
+\chapter*{Šariš}
+\section*{Jakubany}
+\begin{lilypond}
+\header {
+	title = "Rosla sľivka popri sľivci" 
+ 	composer = "Železiar"
+ 	piece = "Polka"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"Rosla sľivka popri sľivci,"
+"dovoľila maty ďivci,"
+"dovoľila na hodynu"
+"a vin chodyl cilu zimu."
+"Hora hora kečera"
+"tu je čeľaď vesela,"
+"za kečerom doľiny"
+"a v ňich rostuť maliny"
+"pyd kečerom je selo"
+"v Jakubianoch veselo."
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"Ked jej chodyl cilu zimu,"
+"dajže divci na perinu."
+"Na perinu vyšivanu"
+"a na kastu maľovanu."
+"Hora hora kečera"
+"tu je čeľaď vesela,"
+"za kečerom doľiny"
+"a v ňich rostuť maliny"
+"pyd kečerom je selo"
+"v Jakubianoch veselo."
 } 
 }
 }

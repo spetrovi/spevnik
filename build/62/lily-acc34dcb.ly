@@ -28,7 +28,7 @@
 % ****************************************************************
 % ly snippet:
 % ****************************************************************
-\sourcefileline 86
+\sourcefileline 59
 \header {
 	title = "Čo sa stalo stať sa nemalo" 
  	composer = "FS Selčan"

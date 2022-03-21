@@ -28,7 +28,7 @@
 % ****************************************************************
 % ly snippet:
 % ****************************************************************
-\sourcefileline 178
+\sourcefileline 151
 \header {
 	title = "Selecké dievky" 
  	composer = "FS Selčan"

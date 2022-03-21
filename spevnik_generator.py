@@ -37,8 +37,11 @@ class Spevnik:
         songs = []
 
         for path in path_to_jsons:
-            with open(path) as f:
-                songs.append(json.load(f))
+            with open(path, 'r') as f:
+                try:
+                    songs.append(json.load(f))
+                except Exception as e:
+                    print('Loading of file ' + path + ' failed')
 
         if self.mode == 'R':
             village_section = "\section*{" + name + "}\n"
@@ -51,12 +54,14 @@ class Spevnik:
                 sloha_template = Template(self.read_file('./templates/sloha.jinja2'))
                 sloha = map(lambda verse: "\"" + verse + "\"", sloha)
                 slohy.append(sloha_template.render(num=str(i+1), verses = '\n'.join(sloha)))
-    
-            column_template = column_template = Template(self.read_file('./templates/columns/'+str(len(slohy))+'column.jinja2'))
-            column_lilypond = column_template.render(sloha=slohy)
+            if len(slohy) == 0:
+                print('Error, empty song')
+            else:
+                column_template = column_template = Template(self.read_file('./templates/columns/'+str(len(slohy))+'column.jinja2'))
+                column_lilypond = column_template.render(sloha=slohy)
         
-            song_lilypond = song_template.render(song=song, slohy=column_lilypond)
-            village_section += song_lilypond + '\n'                
+                song_lilypond = song_template.render(song=song, slohy=column_lilypond)
+                village_section += song_lilypond + '\n'                
         return village_section
         
     def read_file(self, name):
@@ -101,12 +106,16 @@ class Spevnik:
         pdf_path = self.output + '/' + self.book_name + '.pdf'
         if os.path.exists(pdf_path):
             print('Success, generated songbook is: ' + pdf_path)
-            os.remove('texput.log')
+            if os.path.exists('texput.log'):
+                os.remove('texput.log')
         else:
             print('Some occured with pdflatex, here is tex log: ')
-            print(self.read_file('texput.log'))
-            os.remove('texput.log')
-            
+            if os.path.exists('texput.log'):
+                print(self.read_file('texput.log'))
+                os.remove('texput.log')
+            else:
+                print('No texput.log')        
+
             
 usage = ''' ./spevnik_generator.py [options]
 Generate songbook from all songs
@@ -129,7 +138,7 @@ Generate songbook from multiple villages
         
 
 parser = optparse.OptionParser(usage)
-parser.add_option('-a', '--all', dest='parse_all', type='string', help='generate songbook from all songs present in this repo')
+parser.add_option('-a', '--all', dest='parse_all', action='store_true', help='generate songbook from all songs present in this repo')
 parser.add_option('-r', '--region', dest='region', type='string', help='generate songbook from this region or multiple regions separated by colon')
 parser.add_option('-d', '--dedina', dest='dedina', type='string', help='generate songbook from this village or multiple villages separated by colon')
 parser.add_option('-o', '--output_path', default='./build', dest='output_path', type='string', help='specify where to build the songbook')
@@ -137,7 +146,7 @@ parser.add_option('-n', '--name', default='spevnik', dest='book_name', type='str
 (options, args) = parser.parse_args()
 
 if options.parse_all:
-    spevink_object = Spevnik(glob.glob('./Slovensko/*'), options.output_path, options.name, mode='R')
+    spevnik_object = Spevnik(glob.glob('./Slovensko/*'), options.output_path, options.book_name, mode='R')
 elif options.region:
     regiony = map(lambda x: './Slovensko/' + x, options.region.split(':'))
     spevnik_object = Spevnik(regiony, options.output_path, options.book_name, mode='R')

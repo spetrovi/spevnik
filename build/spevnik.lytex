@@ -209,6 +209,141 @@
 }
 \end{lilypond}
 
+
+\section*{Trenčianska Turná}
+\begin{lilypond}
+\header {
+	title = "Čečina, čečina" 
+ 	composer = "Nezistené"
+ 	piece = "Nezistené"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"Čečina, čečina, zelená čečina."
+"/:Čečina, čečina, zelená čečína,"
+"každé diefča lúbi čierníma očíma.:/"
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"Stokrát som ti vravel, na vedomie dával."
+"/:Stokrát som ti vravel, na vedomie dával,"
+"ked chceš mojou byti, iných nebózkávaj.:/"
+} 
+}
+}
+
+ 
+\hspace #0.1 % adds horizontal spacing between columns; 
+% if they are still too close, add more " " pairs 
+% until the result looks good 
+\column { 
+\line { \bold "3." 
+\column { 
+"Ty si nič nedbala, len sí boškávála."
+"/:Ty si nič nedbala, len si boškávala,"
+"ja som sa oženil, ty si tak zostala.:/"
+} 
+}
+}
+}
+\end{lilypond}
+\begin{lilypond}
+\header {
+	title = "Načo ste ma mamičko" 
+ 	composer = "Nezistené"
+ 	piece = "Nezistené"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"/:Načo ste ma mamičko,:/"
+"mladú vydávali."
+"/:Ked ste vy mna mamičko,:/"
+"vienek zavázali."
+"Jakože ja ubožátko mladá žena,"
+"musím ja byt cudzim luďom ponížená."
+"/:Jakože ja budem žit,:/"
+"medzi cudzíma luďma."
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"/:Neboj sa ty dcéra má,:/"
+"pánBo je všáde s tébu."
+"/:A ked budeš poslúchat,:/"
+"búdeš sa aj dobré mat."
+"//:Len sa jeho prikázania vždy pridržuj,"
+"manželovi a rodičom neubližuj."
+"/:Ked ta budú hrešievat,:/"
+"1. nésmieš im odpovédat.://"
+"2. áj ty im dóbre nádaj!"
+} 
+}
+}
+}
+\end{lilypond}
+\begin{lilypond}
+\header {
+	title = "Zelienaj sa zelená trávička" 
+ 	composer = "Nezistené"
+ 	piece = "Čardáš"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"Zelienaj sa zeléna trávíčka,"
+"vylieva sa z Dunaja vodíčka."
+"/:Vyliévaj sa po dróbnem kaméni,"
+"hej aby neból voják šuhaj švárny.:/"
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"Voják budem, lebo sa zverbújem."
+"Zabíju ma lebo domov príďem."
+"/:Vymeň ma ty frajárečka mója,"
+"ej keď ja priďém budeš žena mója.:/"
+} 
+}
+}
+
+ 
+\hspace #0.1 % adds horizontal spacing between columns; 
+% if they are still too close, add more " " pairs 
+% until the result looks good 
+\column { 
+\line { \bold "3." 
+\column { 
+"Čo bych ťa ja z vojny vymieňala,"
+"povedal si, že som ja chudobná"
+"Chudobná som to je pravda istá,"
+"hej, švárny šuhaj, kade tvoja cesta."
+} 
+}
+}
+}
+\end{lilypond}
+
 \chapter*{Podkarpatská Rus}
 \section*{Pudpleša}
 \begin{lilypond}
@@ -291,9 +426,142 @@
 } 
 }
 \end{lilypond}
+\begin{lilypond}
+\header {
+	title = "Ivanku, Ivanku" 
+ 	composer = "Železiar"
+ 	piece = "Nezistené"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"Ivanku, Ivanku z druhoj strany jarku"
+"prišla bym do tebe, prišla bym do tebe,"
+"vzjala voda lavku."
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"Lavočka toneňka voda studeneňka,"
+"a ja molodeňka,"
+"Hodna sja zlomyty, hodna sja zlomyty,"
+"žaľ mi sja vtopyty."
+} 
+}
+}
+
+ 
+\hspace #0.1 % adds horizontal spacing between columns; 
+% if they are still too close, add more " " pairs 
+% until the result looks good 
+\column { 
+\line { \bold "3." 
+\column { 
+"Ivanku večerkom pryjdy do nas jarkom,"
+"Dam ja tobi znaty, dam ja tobi znaty,"
+"koly piduť spaty i ňaňko i maty."
+} 
+}
+}
+}
+\end{lilypond}
 
 \chapter*{Šariš}
 \section*{Jakubany}
+\begin{lilypond}
+\header {
+	title = "Oj na hori tri topoli" 
+ 	composer = "Železiar"
+ 	piece = "Valčík"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"/:Oj na hory tri topoli četvertaja vyšňa:/"
+"/:hraje kozak na banduri štob ďivčina vyšla.:/"
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"/:Vyjďi vyjďi ďivčinoňko jak jes vychodyla:/"
+"skaži meňi ščiru pravdu koho ty ľubila."
+} 
+}
+}
+
+ 
+\hspace #0.1 % adds horizontal spacing between columns; 
+% if they are still too close, add more " " pairs 
+% until the result looks good 
+\column { 
+\line { \bold "3." 
+\column { 
+"/:Ja ľubila ja kochala chlopca molodoho:/"
+"a teper že ja nebudu ľubity nikoho."
+} 
+}
+}
+}
+\end{lilypond}
+\begin{lilypond}
+\header {
+	title = "Oj na hori cigane stojali" 
+ 	composer = "Železiar"
+ 	piece = "Nezistené"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"Oj, na hori, cigane stojali,"
+"pid horoju cigane huľaly."
+"Stojala, dumala, ciganočka moloda,"
+"ciganočka molodaja."
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"Oj, ciganko ty moja kochanko,"
+"ľubil bym ťa, keby ne Ivanko."
+"Stojala, dumala, ciganočka moloda,"
+"ciganočka molodaja."
+} 
+}
+}
+
+ 
+\hspace #0.1 % adds horizontal spacing between columns; 
+% if they are still too close, add more " " pairs 
+% until the result looks good 
+\column { 
+\line { \bold "3." 
+\column { 
+"Odin cigan nepje, nehuľaje,"
+"na ciganku brovami morhaje."
+"/:Stojala, dumala, ciganočka moloda,"
+"ciganočka molodaja.:/"
+} 
+}
+}
+}
+\end{lilypond}
 \begin{lilypond}
 \header {
 	title = "Rosla sľivka popri sľivci" 
@@ -308,31 +576,21 @@
 \column { 
 \line { \bold "1." 
 \column { 
-"Rosla sľivka popri sľivci,"
-"dovoľila maty ďivci,"
-"dovoľila na hodynu"
-"a vin chodyl cilu zimu."
-"Hora hora kečera"
-"tu je čeľaď vesela,"
-"za kečerom doľiny"
-"a v ňich rostuť maliny"
-"pyd kečerom je selo"
-"v Jakubianoch veselo."
+"Rosla sľivka popri sľivci, dovoľila maty ďivci,"
+"dovoľila na hodynu a vin chodyl cilu zimu."
+"Hora hora kečera, tu je čeľaď vesela,"
+"za kečerom doľiny a v ňich rostuť maliny"
+"pyd kečerom je selo v Jakubianoch veselo."
 } 
 }
 \hspace #0.1 % adds vertical spacing between verses 
 \line { \bold "2." 
 \column { 
-"Ked jej chodyl cilu zimu,"
-"dajže divci na perinu."
-"Na perinu vyšivanu"
-"a na kastu maľovanu."
-"Hora hora kečera"
-"tu je čeľaď vesela,"
-"za kečerom doľiny"
-"a v ňich rostuť maliny"
-"pyd kečerom je selo"
-"v Jakubianoch veselo."
+"Ked jej chodyl cilu zimu dajže divci na perinu."
+"Na perinu vyšivanu a na kastu maľovanu."
+"Hora hora kečera, tu je čeľaď vesela,"
+"za kečerom doľiny a v ňich rostuť maliny"
+"pyd kečerom je selo v Jakubianoch veselo."
 } 
 }
 }

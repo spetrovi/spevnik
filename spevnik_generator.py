@@ -42,6 +42,7 @@ class Spevnik:
                     songs.append(json.load(f))
                 except Exception as e:
                     print('Loading of file ' + path + ' failed')
+                    print(e)
 
         if self.mode == 'R':
             village_section = "\section*{" + name + "}\n"
@@ -55,7 +56,7 @@ class Spevnik:
                 sloha = map(lambda verse: "\"" + verse + "\"", sloha)
                 slohy.append(sloha_template.render(num=str(i+1), verses = '\n'.join(sloha)))
             if len(slohy) == 0:
-                print('Error, empty song')
+                print('Error, empty song: ' + song['metadata']['nazov'])
             else:
                 column_template = column_template = Template(self.read_file('./templates/columns/'+str(len(slohy))+'column.jinja2'))
                 column_lilypond = column_template.render(sloha=slohy)

@@ -343,6 +343,206 @@
 }
 }
 \end{lilypond}
+\begin{lilypond}
+\header {
+	title = "Hrmelo, tma bolo" 
+ 	composer = "Nezistené"
+ 	piece = "Nezistené"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"Hrmelo, tma bolo, nad našu záhradku,"
+"šej-háj, hoj."
+"Ťešili sa chlapcí mému mariánku,"
+"bože môj."
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"Netešťe sa chlapcí mému mariánku,"
+"šéj-háj hoj,"
+"u susedov majú peknú/modrú fialenku,"
+"božé môj."
+} 
+}
+}
+
+ 
+\hspace #0.1 % adds horizontal spacing between columns; 
+% if they are still too close, add more " " pairs 
+% until the result looks good 
+\column { 
+\line { \bold "3." 
+\column { 
+"Čo ma po fialke, ked mi nič nevonia,"
+"šéj-háj hoj,"
+"čo ma po diefčati, ked mi neni k vóli,"
+"božé môj."
+} 
+}
+}
+}
+\end{lilypond}
+\begin{lilypond}
+\header {
+	title = "Ach Anička čo je ti" 
+ 	composer = "Nezistené"
+ 	piece = "Nezistené"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"Ach, Anyčka, čo je ti ked ta vidym poviem ti"
+"a čo já viem."
+"Bráni otec, bráni mať, že ta nesmiem miluvať,"
+"a čo já viem."
+"A to všetko jak hovoria, že pre to,"
+"že si pyšná a falešná, že pre to."
+"Že nevieš v poli robit, vždy len po tancoch chodit,"
+"a čo já viem."
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"Ty moj milý šuhajko, poviem ty ja nakrátko,"
+"a čo já viem."
+"Never ludom never ty, ved sú to len klebety,"
+"a čo já viem."
+"Ked ja neviem aj na poli pracúvat,"
+"ale ja viem koli pekne tancúvat."
+"Na poli ma nevidia a v tanci mi závidia"
+"a čo já viem."
+} 
+}
+}
+
+ 
+\hspace #0.1 % adds horizontal spacing between columns; 
+% if they are still too close, add more " " pairs 
+% until the result looks good 
+\column { 
+\line { \bold "3." 
+\column { 
+"A ked sa ja nahnevám, ja tým babám vykonám"
+"a čo já viem."
+"Naraz ale desátym, všetky zuby vymlátym,"
+"a čo já viem."
+"Nech sa ide každá kde chce žalúvát,"
+"mne má každá stará baba pokoj dát."
+"Nikerej nič nerobím, za nikerú nechodim,"
+"a čo já viem."
+} 
+}
+}
+}
+\end{lilypond}
+\begin{lilypond}
+\header {
+	title = "Prevez, prevez, prevozníčku" 
+ 	composer = "Nezistené"
+ 	piece = "Nezistené"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"Prevez, prevez, priévozničku,"
+"mám za vodo frájerečku."
+"/:Mám za vodú, za hlbokú,"
+"tam pod horou pod vysokú.:/"
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"Nemám člnka, ani vesla,"
+"všetko mi voda odniesla."
+"/:Prišiel príval od Kriváňa,"
+"zobral všetko do Komárna.:/"
+} 
+}
+}
+
+ 
+\hspace #0.1 % adds horizontal spacing between columns; 
+% if they are still too close, add more " " pairs 
+% until the result looks good 
+\column { 
+\line { \bold "3." 
+\column { 
+"Máš ty člnok, máš ty veslo,"
+"len ťa trápi tvé remeslo."
+"/:Zlí ludia ta podplatili,"
+"by nám lásku prekazili.:/"
+} 
+}
+}
+}
+\end{lilypond}
+\begin{lilypond}
+\header {
+	title = "V tom Turnanskom potoce" 
+ 	composer = "Nezistené"
+ 	piece = "Nezistené"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"V tom Turanskom potoce, potoce, potoce,"
+"Bystrá voda žblnkoce, žblnkoce."
+"/:Poď má milá poďme k nej, buďeme sa kúpat v nej,"
+"buďeme sa, moja milá, kúpat v nej, kupát v nej.:/"
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"Keď sme sa mi kúpali, kúpali, kúpáli,"
+"Obidva sme plakali, plakáli."
+"/:Čo mi dvaja myslíme, rozejdúť sa musíme,"
+"rozejduť sa, moja milá, musíme, musíme.:/"
+} 
+}
+}
+
+ 
+\hspace #0.1 % adds horizontal spacing between columns; 
+% if they are still too close, add more " " pairs 
+% until the result looks good 
+\column { 
+\line { \bold "3." 
+\column { 
+"Tebe bráni otiec, mať, otiec, mať, otiec, mať."
+"A mne bráni sestra, brat, sestra, brat."
+"/:Tebe bráni rodina, a mne celá ďedina,"
+"a mne celá, duša moja, ďedina, ďedína.:/"
+} 
+}
+}
+}
+\end{lilypond}
 
 \chapter*{Podkarpatská Rus}
 \section*{Pudpleša}

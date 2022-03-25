@@ -106,7 +106,7 @@
 "Ach Ivka, Ivka, moja frajérka,"
 "prečo ta za mňa nescú dať."
 "Či peknejšého, šikovnejšého"
-"tvoja mamka chcú zaťa mať."
+"tvoja mamka chcú zata mat."
 "/: Šikovnejšého nenájdú,"
 "ani ket celý svet obejdú."
 "Ach Ivka, Ivka, moja frajérka,"
@@ -131,21 +131,125 @@
 \line { \bold "1." 
 \column { 
 "Neťukaj, neťukaj, naši ešte nespa,"
-"potom mi zaťukáš keď naši, vaši zaspa."
-"Až keď budú naši, vaši spať,"
-"potom si ty prídi zaťukať."
+"potom mi zaťukaj až keď naši zaspa."
+"/:Až keď budú naši, vaši spať,"
+"potom si ty prídi zaťukať.:/"
 } 
 }
 \hspace #0.1 % adds vertical spacing between verses 
 \line { \bold "2." 
 \column { 
 "Čo to tam, čo to tam, na povale píska."
-"Mladý pán, mladý kišasonku stíska"
+"Mladý pán, mladý pán kišasonku stíska."
 "Neplač, neplač, šak to nebolí,"
 "šak sa ti tá jamka zahojí."
 } 
 }
 }
+}
+\end{lilypond}
+\begin{lilypond}
+\header {
+	title = "Selecké dievky" 
+ 	composer = "FS Selčan"
+ 	piece = "Polka"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"Selecké dievky, čo sa hneváte"
+"keď vy vojačkov, radi nemáte."
+"Radi ich máme, aj milujeme,"
+"aj radi s nima špacírujeme."
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"Špacírovali asi hodynu,"
+"voják si pýta od ňej večeru."
+"Húska pečená, holka svlečená,"
+"to je vojácka dobrá večera."
+"Holka už leží, voják sa teší,"
+"jak si on na nej dobre zacvičí."
+} 
+}
+}
+}
+\end{lilypond}
+\begin{lilypond}
+\header {
+	title = "Čo sa stalo stať sa nemalo" 
+ 	composer = "FS Selčan"
+ 	piece = "Polka"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"Čo sa stalo stať sa nemalo,"
+"že nám to pálené zdraželo."
+"/: Rana je to veliká,"
+"každý plače narieka,"
+"piť či nepiť každý si zvyká. :/"
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"Málo vodky a moc peňazí,"
+"to náladu nech nám nezkazí."
+"/:Pili sme aj budeme,"
+"tolko korún nájdeme,"
+"zabaviť sa predsa mosíme.:/"
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "3." 
+\column { 
+"Pálené, pálené, pálené,"
+"tebe skladám šecky nádeje."
+"/: Kto sa dobre nadojí,"
+"toho už nič nebolí,"
+"ten si leží ticho v posteli.:/"
+} 
+}
+}
+
+ 
+\hspace #0.1 % adds horizontal spacing between columns; 
+% if they are still too close, add more " " pairs 
+% until the result looks good 
+\column { 
+\line { \bold "4." 
+\column { 
+"Čo sa stalo už sa nezmení,"
+"ale čo na to naše ženy?"
+"/: Mosá nám na to pridať,"
+"aby nás mal krčmár rád,"
+"Nenecháme ho my skrachovat.:/"
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "5." 
+\column { 
+"Tridsat percent to je tretina,"
+"za to by si chasa vypila."
+"/: Štamprlíky malé sú,"
+"poldecáky drahé sú,"
+"preto pime aké donesú:/"
+} 
+}
+} 
 }
 \end{lilypond}
 

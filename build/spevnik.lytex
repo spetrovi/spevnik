@@ -59,66 +59,6 @@
 \end{lilypond}
 \begin{lilypond}
 \header {
-	title = "Čo sa stalo stať sa nemalo" 
- 	composer = "FS Selčan"
- 	piece = "Polka"
-}
-
-
-
-
-\markup { 
-\column { 
-\line { \bold "1." 
-\column { 
-"Čo sa stalo stať sa nemalo,"
-"že nám to pálené zdraželo."
-"/: Hanba je to veliká,"
-"každý nad tým narieka,"
-"piť či nepiť každý si zvyká. :/"
-} 
-}
-\hspace #0.1 % adds vertical spacing between verses 
-\line { \bold "2." 
-\column { 
-"Málo vodky a moc peňazí,"
-"to náladu nech nám neskazí."
-"/:Pili sme aj budeme,"
-"tolko korún nájdeme,"
-"zabaviť sa predsa musíme.:/"
-} 
-}
-}
-
- 
-\hspace #0.1 % adds horizontal spacing between columns; 
-% if they are still too close, add more " " pairs 
-% until the result looks good 
-\column { 
-\line { \bold "3." 
-\column { 
-"Pálené, pálené, pálené,"
-"tebe skladám šecky nádeje."
-"/: Kto sa dobre nadojí,"
-"toho už nič nebolí,"
-"ten si leží ticho v posteli.:/"
-} 
-}
-\hspace #0.1 % adds vertical spacing between verses 
-\line { \bold "4." 
-\column { 
-"Čo sa stalo už sa nezmení,"
-"ale čo na to naše ženy?"
-"/: Mosá nám na to pridať,"
-"aby nás mal krčmár rád,"
-"Nenecháme ho my skrachuvať.:/"
-} 
-}
-} 
-}
-\end{lilypond}
-\begin{lilypond}
-\header {
 	title = "Kačička divoká" 
  	composer = "FS Selčan"
  	piece = "Polka"
@@ -151,38 +91,6 @@
 \end{lilypond}
 \begin{lilypond}
 \header {
-	title = "Selecké dievky" 
- 	composer = "FS Selčan"
- 	piece = "Polka"
-}
-
-
-
-
-\markup { 
-\column { 
-\line { \bold "1." 
-\column { 
-"Selecké dievky, čo sa hneváte"
-"že vy vojačkov, radi nemáte."
-"Radi ich máme, aj milujeme,"
-"aj radi s nima špacírujeme."
-} 
-}
-\hspace #0.1 % adds vertical spacing between verses 
-\line { \bold "2." 
-\column { 
-"Špacírovali jednu hodinu,"
-"voják si pýta od nej večeru."
-"Húska pečená, holka svlečená,"
-"to je vojácka dobrá večera."
-} 
-}
-}
-}
-\end{lilypond}
-\begin{lilypond}
-\header {
 	title = "Ach Ivka, Ivka" 
  	composer = "FS Selčan"
  	piece = "Valčík"
@@ -203,6 +111,38 @@
 "ani ket celý svet obejdú."
 "Ach Ivka, Ivka, moja frajérka,"
 "prečo ta za mňa nescú dať. :/"
+} 
+}
+}
+}
+\end{lilypond}
+\begin{lilypond}
+\header {
+	title = "Čo to tam" 
+ 	composer = "FS Selčan"
+ 	piece = "Polka"
+}
+
+
+
+
+\markup { 
+\column { 
+\line { \bold "1." 
+\column { 
+"Neťukaj, neťukaj, naši ešte nespa,"
+"potom mi zaťukáš keď naši, vaši zaspa."
+"Až keď budú naši, vaši spať,"
+"potom si ty prídi zaťukať."
+} 
+}
+\hspace #0.1 % adds vertical spacing between verses 
+\line { \bold "2." 
+\column { 
+"Čo to tam, čo to tam, na povale píska."
+"Mladý pán, mladý kišasonku stíska"
+"Neplač, neplač, šak to nebolí,"
+"šak sa ti tá jamka zahojí."
 } 
 }
 }

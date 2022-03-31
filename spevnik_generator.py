@@ -142,7 +142,7 @@ parser = optparse.OptionParser(usage)
 parser.add_option('-a', '--all', dest='parse_all', action='store_true', help='generate songbook from all songs present in this repo')
 parser.add_option('-r', '--region', dest='region', type='string', help='generate songbook from this region or multiple regions separated by colon')
 parser.add_option('-d', '--dedina', dest='dedina', type='string', help='generate songbook from this village or multiple villages separated by colon')
-parser.add_option('-o', '--output_path', default='./build', dest='output_path', type='string', help='specify where to build the songbook')
+parser.add_option('-o', '--output_path', default='./.gitignore/build', dest='output_path', type='string', help='specify where to build the songbook')
 parser.add_option('-n', '--name', default='spevnik', dest='book_name', type='string', help='specify name of the new book')
 (options, args) = parser.parse_args()
 

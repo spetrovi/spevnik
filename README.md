@@ -30,6 +30,9 @@ Directory for your build
 * -n, --name
 Name of the songbook
 
+* -n, --name
+Display only songs that contain these keywords in metadata section of JSON. Either single keyword or multiple separated by colon.
+
 ## Song formating
 Songs are stored as jsons. One json contains one dictionary with these keywords:
 * sloha

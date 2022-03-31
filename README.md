@@ -30,7 +30,7 @@ Directory for your build
 * -n, --name
 Name of the songbook
 
-* -n, --name
+* -k, --keywords
 Display only songs that contain these keywords in metadata section of JSON. Either single keyword or multiple separated by colon.
 
 ## Song formating

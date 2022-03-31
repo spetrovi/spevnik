@@ -8,11 +8,12 @@ import shutil
 from jinja2 import Template
 
 class Spevnik:
-    def __init__(self, directories, output, book_name, mode):
+    def __init__(self, directories, output, book_name, keywords, mode):
         self.directories = directories
         self.output = output.rstrip('/')
         self.book_name = book_name
         self.mode = mode
+        self.keywords = keywords.split(':')
         
         if self.mode == 'R':
             self.chapters = [self.generate_region(_dir) for _dir in self.directories]
@@ -27,6 +28,9 @@ class Spevnik:
         name = region_path.rstrip('/').split('/')[-1]
         path_to_villages = glob.glob(region_path.rstrip('/') + '/*')
         village_sections = (self.generate_village(path) for path in path_to_villages)
+        village_sections = list(filter(lambda section: not not section, village_sections))
+        if not village_sections:
+            return ''
         region_chapter = "\chapter*{" + name + "}\n" + '\n\n'.join(village_sections)
         return region_chapter
         
@@ -44,10 +48,18 @@ class Spevnik:
                     print('Loading of file ' + path + ' failed')
                     print(e)
 
+        if self.keywords:
+            songs = filter(lambda song: 'keywords' in song['metadata'], songs)
+            songs = list(filter(lambda song: any(x in song['metadata']['keywords'] for x in self.keywords), songs))
+
+        if not songs:
+            return ''
+
         if self.mode == 'R':
             village_section = "\section*{" + name + "}\n"
         elif self.mode == 'D':
             village_section = "\chapter*{" + name + "}\n"
+            
         for song in songs:
             song_template = Template(self.read_file('./templates/song.jinja2'))
             slohy = []
@@ -143,16 +155,17 @@ parser.add_option('-a', '--all', dest='parse_all', action='store_true', help='ge
 parser.add_option('-r', '--region', dest='region', type='string', help='generate songbook from this region or multiple regions separated by colon')
 parser.add_option('-d', '--dedina', dest='dedina', type='string', help='generate songbook from this village or multiple villages separated by colon')
 parser.add_option('-o', '--output_path', default='./.gitignore/build', dest='output_path', type='string', help='specify where to build the songbook')
-parser.add_option('-n', '--name', default='spevnik', dest='book_name', type='string', help='specify name of the new book')
+parser.add_option('-n', '--name', default='spevnik_vsetko', dest='book_name', type='string', help='specify name of the new book')
+parser.add_option('-k', '--keywords', dest='keywords', type='string', help='specify keywords to filter songs')
 (options, args) = parser.parse_args()
 
 if options.parse_all:
-    spevnik_object = Spevnik(glob.glob('./Slovensko/*'), options.output_path, options.book_name, mode='R')
+    spevnik_object = Spevnik(glob.glob('./Slovensko/*'), options.output_path, options.book_name, options.keywords, mode='R')
 elif options.region:
     regiony = map(lambda x: './Slovensko/' + x, options.region.split(':'))
-    spevnik_object = Spevnik(regiony, options.output_path, options.book_name, mode='R')
+    spevnik_object = Spevnik(regiony, options.output_path, options.book_name, options.keywords, mode='R')
 elif options.dedina:
     dediny = map(lambda dedina: './Slovensko/*/' + dedina ,options.dedina.split(':'))
     dediny = map(lambda dedina: glob.glob(dedina), dediny)
-    spevnik_object = Spevnik(dediny, options.output_path, book_name, mode='D')
+    spevnik_object = Spevnik(dediny, options.output_path, book_name, options.keywords, mode='D')
 spevnik_object.build()

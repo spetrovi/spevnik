@@ -7,6 +7,7 @@ import optparse
 import shutil
 from jinja2 import Template
 
+
 class Spevnik:
     def __init__(self, directories, output, book_name, keywords, mode):
         self.directories = directories
@@ -14,16 +15,15 @@ class Spevnik:
         self.book_name = book_name
         self.mode = mode
         self.keywords = keywords.split(':')
-        
+
         if self.mode == 'R':
             self.chapters = [self.generate_region(_dir) for _dir in self.directories]
         if self.mode == 'D':
             self.chapters = [self.generate_villages(_dir) for _dir in self.directories]
-        
+
         book_template = Template(self.read_file('./templates/book.jinja2'))
         self.book = book_template.render(completed='\n'.join(self.chapters))
-        
-        
+
     def generate_region(self, region_path):
         name = region_path.rstrip('/').split('/')[-1]
         path_to_villages = glob.glob(region_path.rstrip('/') + '/*')
@@ -33,8 +33,7 @@ class Spevnik:
             return ''
         region_chapter = "\chapter*{" + name + "}\n" + '\n\n'.join(village_sections)
         return region_chapter
-        
-        
+
     def generate_village(self, village_path):
         name = village_path.rstrip('/').split('/')[-1]
         path_to_jsons = glob.glob(village_path + '/*.json')
@@ -59,24 +58,24 @@ class Spevnik:
             village_section = "\section*{" + name + "}\n"
         elif self.mode == 'D':
             village_section = "\chapter*{" + name + "}\n"
-            
+
         for song in songs:
             song_template = Template(self.read_file('./templates/song.jinja2'))
             slohy = []
             for i, sloha in enumerate(song['sloha']):
                 sloha_template = Template(self.read_file('./templates/sloha.jinja2'))
                 sloha = map(lambda verse: "\"" + verse + "\"", sloha)
-                slohy.append(sloha_template.render(num=str(i+1), verses = '\n'.join(sloha)))
+                slohy.append(sloha_template.render(num=str(i+1), verses='\n'.join(sloha)))
             if len(slohy) == 0:
                 print('Error, empty song: ' + song['metadata']['nazov'])
             else:
                 column_template = column_template = Template(self.read_file('./templates/columns/'+str(len(slohy))+'column.jinja2'))
                 column_lilypond = column_template.render(sloha=slohy)
-        
+
                 song_lilypond = song_template.render(song=song, slohy=column_lilypond)
-                village_section += song_lilypond + '\n'                
+                village_section += song_lilypond + '\n'
         return village_section
-        
+
     def read_file(self, name):
         try:
             with open(name, 'r') as f:
@@ -85,29 +84,29 @@ class Spevnik:
         except Exception as e:
             print('Exception in reading file: ' + name)
             print(e)
-               
+
     def save(self, book):
         try:
             os.makedirs(self.output)
         except Exception as e:
             print(e)
-        lytex_path = self.output + '/' + book 
+        lytex_path = self.output + '/' + book
         with open(lytex_path, 'w') as f:
             f.write(self.book)
         return lytex_path
-            
+
     def build(self):
         if os.path.exists(self.output):
             shutil.rmtree(self.output)
-        lytex_path = self.save(self.book_name +'.lytex')
-        
+        lytex_path = self.save(self.book_name + '.lytex')
+
         proc = subprocess.Popen(['lilypond-book', '--output=' + self.output, '--pdf', lytex_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        
+
         outs, errs = proc.communicate()
         if errs:
             print('There were some errors running lilypond-book:')
 #            print(errs)
-            
+
         orig_dir = os.path.abspath('.')
         os.chdir(self.output)
         proc = subprocess.Popen(['pdflatex', '-interaction=nonstopmode', self.book_name + '.tex'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -127,9 +126,9 @@ class Spevnik:
                 print(self.read_file('texput.log'))
                 os.remove('texput.log')
             else:
-                print('No texput.log')        
+                print('No texput.log')
 
-            
+
 usage = ''' ./spevnik_generator.py [options]
 Generate songbook from all songs
     $ ./spevnik_generator.py -a
@@ -147,8 +146,7 @@ Generate songbook from multiple villages
         $ ./complete_generator.py -d 'Selec':'Stankovce'
                        
 '''
-        
-        
+
 
 parser = optparse.OptionParser(usage)
 parser.add_option('-a', '--all', dest='parse_all', action='store_true', help='generate songbook from all songs present in this repo')
@@ -165,7 +163,7 @@ elif options.region:
     regiony = map(lambda x: './Slovensko/' + x, options.region.split(':'))
     spevnik_object = Spevnik(regiony, options.output_path, options.book_name, options.keywords, mode='R')
 elif options.dedina:
-    dediny = map(lambda dedina: './Slovensko/*/' + dedina ,options.dedina.split(':'))
+    dediny = map(lambda dedina: './Slovensko/*/' + dedina, options.dedina.split(':'))
     dediny = map(lambda dedina: glob.glob(dedina), dediny)
     spevnik_object = Spevnik(dediny, options.output_path, book_name, options.keywords, mode='D')
 spevnik_object.build()
